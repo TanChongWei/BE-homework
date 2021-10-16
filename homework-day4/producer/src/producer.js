@@ -1,6 +1,6 @@
 const amqplib = require('amqplib')
 const cron = require('node-cron')
-const queueName = 'tasks'
+const queueName = 'heartbeat'
 const ws = require('ws')
 
 const sendWsRequest = (msg) => {

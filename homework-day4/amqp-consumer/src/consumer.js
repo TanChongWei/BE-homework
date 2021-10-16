@@ -1,6 +1,6 @@
 const amqplib = require('amqplib')
 const fs = require('fs')
-const queueName = 'tasks'
+const queueName = 'heartbeat'
 
 ;(async () => {
   const client = await amqplib.connect('amqp://localhost:5672')
